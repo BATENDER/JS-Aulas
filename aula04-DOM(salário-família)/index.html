@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/index.css">
+        <link rel="stylesheet" href="styles/set.css">
+        <link rel="shortcut icon" href="imgs/diversity_3_FILL0_wght400_GRAD0_opsz24.png" type="image/x-icon">
+        <title>Salário - Família</title>
+    </head>
+    
+    <body>
+        <main>
+            <img src="AtividadeSalarioFamilia/images/salario-familia.jpg" alt="Salário Família foto">
+
+            <form action="" method="post">
+                <input id="empregado" type="text" placeholder="Empregado" class="inserir">
+                <input id="qtdFilhos" type="number" min="0" placeholder="Quantidade de filhos menores de 14 anos ou inválidos" class="inserir">
+                <input id="salContribuicao" type="number" min="0" step="0.01" placeholder="Salário Contribuição" class="inserir">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Salário-Contribuição</th>
+                            <th>Cota do Salário Família</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Até R$ 806,80</th>
+                            <th>R$ 41,37 por filho</th>
+                        </tr>
+                        <tr>
+                            <th>Entre R$ 806,81 e R$ 1.212,64</th>
+                            <th>29,16 por filho</th>
+                        </tr>
+                        <tr>
+                            <th>Mais de R$ 1.212,64</th>
+                            <th>Não há</th>
+                        </tr>
+                    </tbody>
+                    <tfoot></tfoot>
+                </table>
+
+                <button type="button" id="btnCalcular">Calcular</button>
+
+                <span id="resposta">RESULTADO DO CÁLCULO</span>
+            </form>
+        </main>
+        <script src="js/index.js"></script> 
+    </body>
+</html>

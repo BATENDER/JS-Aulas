@@ -1,0 +1,10 @@
+:root {
+    --amarelo: rgb(243, 167, 3);
+    --cinza: #5c5c5c;
+}
+
+#root {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--cinza);
+}

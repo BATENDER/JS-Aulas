@@ -3,8 +3,55 @@
     --cinza: #5c5c5c;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 #root {
     width: 100%;
     height: 100vh;
     background-color: var(--cinza);
+}
+
+#root, #divText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, span {
+    color: whitesmoke;
+}
+
+span {
+    background-color: black;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 20pt;
+    transition: .2s;
+}
+
+span:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+#divText {
+    width: 100%;
+    padding: 1rem 0;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+#inputText {
+    width: auto;
+    height: 50px;
+    padding: 2rem 1rem;
+    font-size: 36pt;
+    border-radius: 10px;
+    border: none;
+    color: whitesmoke;
+    background-color: rgb(0, 0, 0);
 }

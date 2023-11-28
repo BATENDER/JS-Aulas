@@ -1,0 +1,109 @@
+:root {
+    --branco: rgb(192, 192, 192);
+    --cinza: rgb(78, 78, 78);
+    --verde: rgb(149, 255, 149);
+}
+
+@keyframes spinner-border {
+    to { 
+        transform: rotate(360deg);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root, header, main, .inputs, footer {
+    width: 100%;
+}
+
+#root {
+    height: 100vh;
+    flex-direction: column;
+    gap: 3rem;
+    background-color: var(--branco);
+}
+
+section, #root, form, .inputs, footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    width: 70%;
+    padding: 2rem;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 20px;
+    background-color: var(--cinza);
+}
+
+header {
+    text-align: center;
+}
+
+h1, label {
+    color: var(--verde);
+}
+
+form {
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.inputs {
+    flex-direction: column;
+    gap: 4px;
+}
+
+.labels {
+    width: 80%;
+}
+
+label {
+    text-align: start;
+}
+
+input, select {
+    width: 80%;
+    height: 30px;
+    padding-left: 3px;
+    border-radius: 5px;
+    border: none;
+    font-size: 12pt;
+    color: var(--cinza);
+    background-color: var(--branco);
+}
+
+textarea {
+    width: 80%;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 11pt;
+    resize: none;
+    background-color: var(--branco);
+}
+
+input:focus, textarea:focus {
+    border-color: transparent;
+    color: var(--cinza);
+    border: none;
+}
+
+#btnFilme {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: var(--cinza);
+    background-color: var(--branco);
+}
+
+#btnFilme:hover {
+    cursor: pointer;
+    background-color: var(--verde);
+}

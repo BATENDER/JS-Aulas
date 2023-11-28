@@ -5,8 +5,32 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Atividade 06</title>
+
+        <style>
+            .carroResultado {
+                width: 200px;
+                padding: 1rem;
+                margin: 1rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background-color: rgb(202, 202, 202);
+            }
+        </style>
     </head>
     <body>
+        <input type="text" placeholder="marca" id="marca">
+        <input type="text" placeholder="modelo" id="modelo">
+        <input type="date" id="ano">
+        <input type="color" id="cor">
+        <input type="number" placeholder="Velocidade Máxima" id="velocidadeMax">
+        
+        <button type="button" id="btnCarro">Criar carro</button>
+        <button type="reset">Resetar</button>
+
+        <div id="resultado"></div>
+
         <script src="js/carro.js"></script>
     </body>
 </html>

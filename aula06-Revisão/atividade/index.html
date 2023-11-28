@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastrar Filmes</title>
+        <link rel="shortcut icon" href="imgs/settings_video_camera_FILL0_wght300_GRAD0_opsz24.svg" type="image/x-icon">
+        <link rel="stylesheet" href="styles/index.css">
+    </head>
+    <body>
+        <div id="root">
+            <section>
+                <header>
+                    <h1>CADASTRE SEU FILME AQUI!</h1>
+                </header>
+
+                <main>
+                    <form action="" method="post">
+                        <div class="inputs">
+                            <div class="labels">
+                                <label for="nomeFilme">Nome do filme</label>
+                            </div>
+                            <input type="text" id="nomeFilme">
+                        </div>
+                        
+                        <div class="inputs">
+                            <div class="labels">
+                                <label for="nomeFilme">Descrição do filme</label>
+                            </div>
+                            <textarea name="" id="descricaoFilme" cols="" rows="5"></textarea>
+                        </div>
+
+                        <div class="inputs">
+                            <div class="labels">
+                                <label for="dataFilme">Data de lançamento do filme</label>
+                            </div>
+                            <input type="date" id="dataFilme">
+                        </div>
+
+                        <div class="inputs">
+                            <div class="labels">
+                                <label for="diretorFilme">Diretor do filme</label>
+                            </div>
+                            <input type="text" id="diretorFilme">
+                        </div>
+
+                        <div class="inputs">
+                            <div class="labels">
+                                <label for="categoriaFilme">Categoria do filme</label>
+                            </div>
+                            <select name="" id="categoriaFilme">
+                                <option selected>Escolha uma categoriaFilme</option>
+                                <option value="1">Ação</option>
+                                <option value="2">Comédia</option>
+                                <option value="3">Drama</option>
+                                <option value="4">Romance</option>
+                                <option value="5">Documentário</option>
+                                <option value="6">Suspense</option>
+                                <option value="7">Terror</option>
+                                <option value="8">Ficção Científica</option>
+                            </select>
+                        </div>
+                    </form>
+                </main>
+
+                <footer>
+                    <button type="button" id="btnFilme">
+                        CADASTRAR
+                    </button>
+                </footer>
+            </section>
+
+            <span id="listaFilme"></span>
+        </div>
+
+        <script src="js/index.js"></script>
+    </body>
+</html>

@@ -46,4 +46,26 @@ class Carro {
 }
 
 var infinito = Number.MAX_VALUE
-var carro1 = new Carro('Fiat', 'Uno com escada', 2016, 'Branco', infinito);
+
+
+// HTML
+var btnCarro = document.getElementById('btnCarro');
+var resultado = document.getElementById('resultado');
+
+btnCarro.addEventListener('click', criarCarro);
+
+function criarCarro() {
+    let marcaInput = document.getElementById('marca').value;
+    let modeloInput = document.getElementById('modelo').value;
+    let anoInput = document.getElementById('ano').value;
+    let corInput = document.getElementById('cor').value;
+    let velMaxInput = document.getElementById('velocidadeMax').value;
+
+    var carro = new Carro(marcaInput, modeloInput, anoInput, corInput, velMaxInput);
+    
+    resultado.innerHTML = `<div class="carroResultado">
+        <h3>${carro.modelo}</h3>
+        <p>${carro.marca}</p>
+        <span style="color: ${carro.cor};">COR ESCOLHIDA</span>
+    </div>`;
+}

@@ -10,7 +10,7 @@ class Filme {
 
 var filmeBtn = document.getElementById('filmeBtn');
 var listarBtn = document.getElementById('listarBtn');
-var filme = null;
+var filmes = [];
 
 filmeBtn.addEventListener('click', cadastrarFilme);
 listarBtn.addEventListener('click', listarFilmes);
@@ -22,31 +22,39 @@ function cadastrarFilme() {
     let diretorFilme = document.getElementById('diretorFilme').value;
     let categoriaFilme = document.getElementById('categoriaFilme').value;
     let respostaFilme = document.getElementById('respostaFilme');
+    let msgCadastro = document.getElementById('msgCadastro');
 
-    filme = new Filme(nomeFilme, descricaoFilme, dataFilme, diretorFilme, categoriaFilme);
-    respostaFilme.innerHTML = 'FILMES CADASTRADOS: 1';
+    msgCadastro.innerHTML = `<h5 class="sucesso">Filme cadastrado com sucesso</h5>`
+    
+    filmes.push(new Filme(nomeFilme, descricaoFilme, dataFilme, diretorFilme, categoriaFilme));
+    
 }
 
 function listarFilmes() {
     let resposta = document.getElementById('resposta');
 
-    resposta.innerHTML += `<div class="filme" id="filmeTemplate">
-    <h2>${filme.nomeFilme}</h2>
-    <div class="divisao">
-        <h3>Descrição</h3>
-        <p>${filme.descricaoFilme}</p>
-    </div>
-    <div class="divisao">
-        <h3>Data de lançamento</h3>
-        <p>${filme.dataFilme}</p>
-    </div>
-    <div class="divisao">
-        <h3>Diretor do filme</h3>
-        <p>${filme.diretorFilme}p>
-    </div>
-    <div class="divisao">
-        <h3>Categoria</h3>
-        <p>${filme.categoriaFilme}</p>
-    </div>
-</div>`
+    resposta.innerHTML = '';
+    
+    filmes.forEach((cadaFilme) => {
+        resposta.innerHTML += `<div class="filme" id="filmeTemplate">
+        <h2>${filmes.nomeFilme}</h2>
+        <div class="divisao">
+            <h3>Descrição</h3>
+            <p>${filmes.descricaoFilme}</p>
+        </div>
+        <div class="divisao">
+            <h3>Data de lançamento</h3>
+            <p>${filmes.dataFilme}</p>
+        </div>
+        <div class="divisao">
+            <h3>Diretor do filme</h3>
+            <p>${filmes.diretorFilme}</p>
+        </div>
+        <div class="divisao">
+            <h3>Categoria</h3>
+            <p>${filmes.categoriaFilme}</p>
+        </div>
+    </div>`;
+
+    });
 }

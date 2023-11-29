@@ -29,7 +29,7 @@
     background-color: var(--branco);
 }
 
-section, #root, form, .inputs, footer {
+section, #root, form, .inputs, footer, main {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,6 +54,11 @@ h1, h2, h3, label {
 
 p {
     color: var(--cinza-claro);
+}
+
+main {
+    flex-direction: column;
+    gap: 1rem;
 }
 
 form {
@@ -137,4 +142,12 @@ footer {
     cursor: pointer;
     box-shadow: 4px 4px 6px var(--branco);
     background-color: var(--verde);
+}
+
+.sucesso {
+    color: var(--verde);
+}
+
+.fracasso {
+    color: rgb(255, 101, 101);
 }

@@ -7,6 +7,7 @@
         <title>Cadastrar Filmes</title>
         <link rel="shortcut icon" href="imgs/settings_video_camera_FILL0_wght300_GRAD0_opsz24.svg" type="image/x-icon">
         <link rel="stylesheet" href="styles/index.css">
+        <link rel="stylesheet" href="styles/filme.css">
     </head>
     <body>
         <div id="root">
@@ -21,14 +22,14 @@
                             <div class="labels">
                                 <label for="nomeFilme">Nome do filme</label>
                             </div>
-                            <input type="text" id="nomeFilme">
+                            <input type="text" placeholder="Ex.: Guardiões da Galáxia" id="nomeFilme">
                         </div>
                         
                         <div class="inputs">
                             <div class="labels">
                                 <label for="nomeFilme">Descrição do filme</label>
                             </div>
-                            <textarea name="" id="descricaoFilme" cols="" rows="5"></textarea>
+                            <textarea name="" placeholder="Uma descrição qualquer..." id="descricaoFilme" cols="" rows="5"></textarea>
                         </div>
 
                         <div class="inputs">
@@ -42,7 +43,7 @@
                             <div class="labels">
                                 <label for="diretorFilme">Diretor do filme</label>
                             </div>
-                            <input type="text" id="diretorFilme">
+                            <input type="text" placeholder="Ex.: Nome_Diretor" id="diretorFilme">
                         </div>
 
                         <div class="inputs">
@@ -50,25 +51,60 @@
                                 <label for="categoriaFilme">Categoria do filme</label>
                             </div>
                             <select name="" id="categoriaFilme">
-                                <option selected>Escolha uma categoriaFilme</option>
-                                <option value="1">Ação</option>
-                                <option value="2">Comédia</option>
-                                <option value="3">Drama</option>
-                                <option value="4">Romance</option>
-                                <option value="5">Documentário</option>
-                                <option value="6">Suspense</option>
-                                <option value="7">Terror</option>
-                                <option value="8">Ficção Científica</option>
+                                <option selected id="naoSelecionar">Escolha uma categoriaFilme</option>
+                                <option value="Ação">Ação</option>
+                                <option value="Comédia">Comédia</option>
+                                <option value="Drama">Drama</option>
+                                <option value="Romance">Romance</option>
+                                <option value="Documentário">Documentário</option>
+                                <option value="Suspense">Suspense</option>
+                                <option value="Terror">Terror</option>
+                                <option value="Ficção Científica">Ficção Científica</option>
                             </select>
                         </div>
                     </form>
                 </main>
 
                 <footer>
-                    <button type="button" id="btnFilme">
+                    <button type="button" id="listarBtn">
+                        LISTAR FILMES
+                    </button>
+                    <button type="button" id="filmeBtn">
                         CADASTRAR
                     </button>
                 </footer>
+            </section>
+
+            <section>
+                <header>
+                    <h1 id="respostaFilme">FILMES CADASTRADOS: 0</h1>
+                </header>
+
+                <main>
+                    <div id="resposta">
+                        <div class="filme" id="filmeTemplate">
+                            <h2>Exemplo filme</h2>
+                            <div class="divisao">
+                                <h3>Descrição</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint amet corporis incidunt distinctio. Alias explicabo illo architecto enim! Cumque quae dolores, quia iusto voluptatibus ullam? Ipsam, est! Rerum, inventore eveniet!</p>
+                            </div>
+                            <div class="divisao">
+                                <h3>Data de lançamento</h3>
+                                <p>22/02/2022</p>
+                            </div>
+                            <div class="divisao">
+                                <h3>Diretor do filme</h3>
+                                <p>"Nome qualquer"</p>
+                            </div>
+                            <div class="divisao">
+                                <h3>Categoria</h3>
+                                <p>Comédia</p>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+
+                <footer></footer>
             </section>
 
             <span id="listaFilme"></span>

@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root, nav, main, footer, #textos {
+    width: 100%;
+}
+
+#root, nav, #links, ul, #logo, #textos, #btn {
+    display: flex;
+}
+
+#root {
+    background-color: rgb(140, 185, 228);
+}
+
+#esquerda {
+    width: 65%;
+    padding: 2rem 5rem;
+}
+
+nav {
+    height: 40px;
+}
+
+#links {
+    width: 80%;
+    align-items: center;
+    font-weight: bold;
+}
+
+ul {
+    gap: 5rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#logo {
+    width: 20%;
+    justify-content: center;
+}
+
+#logo span {
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+#textos, #botao {
+    padding-top: 6rem;
+}
+
+#textos {
+    flex-direction: column;
+    gap: 10px;
+}
+
+#btnRodar {
+    padding: 10px 2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: whitesmoke;
+}
+
+#btnRodar:hover {
+    cursor: pointer;
+    background-color: whitesmoke;
+    color: black;
+}
+
+footer {
+    padding: 6rem 0;
+}
+
+#direita {
+    width: 35%;
+}
+
+.quadrado{
+    width: 280px;
+    height: 450px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    border-radius: 0 30px 30px 30px;
+    background-color: rgb(162, 201, 238);
+}
+
+#quadradoImportante {
+    background-color: cornflowerblue;
+}
+
+#btn {
+    justify-content: center;
+}
+
+#saibaMais {
+    padding: 10px 2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(140, 185, 228, 0.616);
+    color: whitesmoke;
+}

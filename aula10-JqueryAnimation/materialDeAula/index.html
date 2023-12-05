@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 10 - jQuery Animation</title>
+
+    <style>
+        body {
+            width: 100%;
+            display: flex;
+        }
+        #botao {
+            width: 40%;
+            height: 100%;
+            padding: 4rem 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+        }
+        button {
+            width: 100px;
+        }
+        #caixa {
+            width: 500px;
+            height: 500px;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: aqua;
+            border-radius: 10px;
+            transition: .8s;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="botao">
+        <button type="button" id="animacao1">Animação1</button>
+        <button type="button" id="animacao2">Animação2</button>
+        <button type="button" id="animacao3">Animaçã3o</button>
+        <button type="button" id="animacao4">Animação4</button>
+        <button type="button" id="animacao5">Animação5</button>
+        <button type="button" id="animacao6">Animação6</button>
+    </div>
+
+    <div id="caixa">
+        <h1>Coisa</h1>
+    </div>
+
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

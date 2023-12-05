@@ -8,9 +8,9 @@
         <link rel="stylesheet" href="styles/index.css">
     </head>
     <body>
-        <div id="root">
+        <div id="root" class="temaClaro">
             <label class="switch">
-                <input type="checkbox" checked>
+                <input id="btnTema" class="temaClaro" type="checkbox" checked>
                 <span class="slider round"></span>
             </label>
 
@@ -18,12 +18,15 @@
                 <input type="number" name="" min="0" id="tabuada">
                 <button type="button" id="btnCalcular">Calcular</button>
             </div>
-            <span id="resposta"></span>
+            <div class="resultado">
+                <div id="resultadoTabuada"></div>
+            </div>
         </div>
 
 
 
         <script src="js/jquery-3.7.1.js"></script>
-        <script src="js/index.js"></script>
+        <script src="js/index1.js"></script>
+        <script src="js/index2.js"></script>
     </body>
 </html>

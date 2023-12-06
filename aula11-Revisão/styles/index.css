@@ -1,0 +1,12 @@
+#root {
+    background-color: black;
+}
+
+svg:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 3px whitesmoke);
+}
+
+aside {
+    background-color: rgb(54, 54, 54);;
+}

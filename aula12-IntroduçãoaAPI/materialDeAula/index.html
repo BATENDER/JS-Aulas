@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aula 12 - VerificaCEP</title>
+        <link rel="shortcut icon" href="imgs/api_FILL0_wght400_GRAD0_opsz24.png" type="image/x-icon">
+        <link rel="stylesheet" href="styles/index.css">
+    </head>
+
+    <body>
+        <!-- 
+            cep - ok
+            localidade - ok
+            bairro - 
+            uf - 
+            ddd - 
+         -->
+        
+        <div id="primeiro">
+            <div id="resposta" class="padrao"></div>
+            <input type="text" placeholder="Digite seu cep" name="" id="cep">
+        </div>
+        <div id="segundo">
+            <input type="text" placeholder="Digite sua localidade" name="" id="localidade">
+            <input type="text" placeholder="UF" name="" id="uf">
+        </div>
+        <div id="terceiro">
+            <input type="text" placeholder="Digite seu bairro" name="" id="bairro">
+            <input type="text" placeholder="Digite seu DDD" name="" id="ddd">
+        </div>
+        <div id="quarto">
+            <input type="text" placeholder="Digite seu complemento" name="" id="complemento">
+            <input type="text" placeholder="Digite seu GIA" name="" id="gia">
+        </div>
+        <div id="quinto">
+            <a href="pages/buscaCep.html">
+                <button id="cepDesconhecido" class="padrao">Esqueci meu cep!</button>
+            </a>
+        </div>
+
+        <script src="js/index.js"></script>
+    </body>
+</html>

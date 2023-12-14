@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+}
+
+input {
+    height: 3rem;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(122, 204, 204);
+}
+
+#primeiro, #segundo, #terceiro, #quarto, #quinto, #resposta, #cepDesconhecido, a, #buscar, #respostaBusca {
+    width: 80%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#cep {
+    width: 80%;
+}
+
+#resposta, #respostaBusca {
+    width: 20%;
+    height: 3rem;
+    border-radius: 10px;
+}
+
+#localidade, #bairro, #complemento, #bairroBusca {
+    width: 80%;
+}
+
+#uf, #ddd, #gia, #ufBusca {
+    width: 20%;
+}
+
+#cepDesconhecido, #buscar {
+    width: 20%;
+    height: 3rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 12pt;
+    color: aliceblue;
+}
+
+a {
+    text-decoration: none;
+}
+
+.padrao {
+    background-color: rgb(122, 204, 204);
+}
+
+.success {
+    background-color: rgb(2, 212, 2);
+}
+
+.error {
+    background-color: red;
+}
+
+#cepDesconhecido:hover, #buscar:hover {
+    cursor: pointer;
+    color: black;
+    background-color: aliceblue;
+}

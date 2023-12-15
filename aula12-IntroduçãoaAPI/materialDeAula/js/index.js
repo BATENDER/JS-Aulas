@@ -1,18 +1,20 @@
 // API = Aplicação que pode ser utilizada em diversos projetos (Application Programming Interface)
 // fetch = busca a API
 var cep = document.querySelector('#cep');
-var resposta = document.querySelector('#resposta');
 
 resposta.innerHTML = `Digite um cep de 8 dígitos válido!`;
 cep.addEventListener('focusout', function() {
     let cepValue = cep.value;
+    let resposta = document.querySelector('#resposta');
 
     if(cepValue.length < 8 || cepValue.length > 8) {
         resposta.innerHTML = 'Digite um cep válido';
         resposta.classList.replace('padrao', 'error');
+        resposta.classList.replace('success', 'error');
     } else {
         resposta.innerHTML = 'CEP encontrado!'
         resposta.classList.replace('padrao', 'success');
+        resposta.classList.replace('error', 'success');
         fetch(`https://viacep.com.br/ws/${cepValue}/json/`).then((res) => {
             return res.json();
         }).then((data) => {
@@ -40,24 +42,4 @@ cep.addEventListener('focusout', function() {
             }
         });
     }
-});
-
-
-// let localidadeBusca = document.querySelector('#localidadeBusca');
-// let bairroBusca = document.querySelector('#bairroBusca');
-// let ufBusca = document.querySelector('#ufBusca');
-
-var btnBuscar = document.getElementById('#buscar');
-
-btnBuscar.addEventListener('click', function() {
-    let localidadeBusca = document.querySelector('#localidadeBusca');
-    let bairroBusca = document.querySelector('#bairroBusca');
-    let ufBusca = document.querySelector('#ufBusca');
-    let respostaBusca = document.querySelector('#respostaBusca')
-
-    fetch(`viacep.com.br/ws/${ufBusca}/${localidadeBusca}/${bairroBusca}/json/`).then((res) => {
-        return res.json();
-    }).then((data) => {
-        
-    });
 });
